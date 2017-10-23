@@ -45,6 +45,11 @@ gm () {
   git commit -s -S -m "feat($1): $2"
 }
 
+# https://github.com/caius/zshrc/blob/5bca7f7e60c7b03e6db55b3af83186558685b947/functions/zsh_stats
+zsh_stats () {
+  fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n20
+}
+
 alias ls="ls --color --group-directories-first -F"
 alias lsa="ls -Al --human-readable"
 alias lsal="ls -Al"
