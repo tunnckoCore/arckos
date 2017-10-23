@@ -1,0 +1,71 @@
+# ensurance
+alias rm="rm -i --preserve-root"
+
+alias rma="trash"
+
+# confirmation #
+alias mv="mv -i"
+alias cp="cp -i"
+alias ln="ln -i"
+alias cp="cp -i"
+
+# Parenting changing perms on / #
+alias chown="chown --preserve-root"
+alias chmod="chmod --preserve-root"
+alias chgrp="chgrp --preserve-root"
+
+alias zshc="nano ~/.zsh-charlike"
+alias ali="nano ~/.zsh-aliases"
+
+alias n="yarn"
+alias nad="yarn add --dev"
+alias gad="yarn global add"
+alias nis="yarn add"
+alias nrt="yarn test"
+alias cl="clear"
+alias c="yarn commit"
+alias gcm="git commit -s -S -m "$1""
+
+gia () {
+  git clone git@github.com:"tunnckoCore/$1".git
+}
+gio () {
+  git clone git@github.com:"olstenlarck/$1".git
+}
+
+gf () {
+  git commit -s -S -m "fix(*): $1"
+}
+
+gm () {
+  git commit -s -S -m "feat($1): $2"
+}
+
+alias ls="ls --color --group-directories-first -F"
+alias lsa="ls -Al --human-readable"
+alias lsal="ls -Al"
+alias g="git"
+alias cd..="cd .."
+
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
+# Clipboard
+alias setclip='xclip -selection c'
+alias getclip='xclip -selection clipboard -o'
+
+alias mkdir='mkdir -pv'
+alias grep="grep --color=tty -d skip"
+alias opn="xdg-open"
+alias sk="screenkey"
+
+# replace `*` with `x` to avoid expansion
+math() {
+    echo "scale=2 ; $*" | sed -e "s:x:*:g" | sed -e "s:,::g" | bc
+}
+
+alias gall="git add --all"
+alias gp="git push"
+
+# Semantic Releases Setup
+alias sss="semantic-release-cli setup"

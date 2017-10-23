@@ -1,2 +1,2 @@
-# arckos
-ArchLinux + i3 setup with raw Zsh and "hyper-snazzy"-inspired themeing.
+# charlike-os
+Minimalistic, desktop and developer-oriented ArchLinux distro with support for 32bit and 64bit processors.
