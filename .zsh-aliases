@@ -1,6 +1,7 @@
 # ensurance
 alias rm="rm -i --preserve-root"
 
+# yarn global add trash-cli
 alias rma="trash"
 
 # confirmation #
@@ -25,6 +26,9 @@ alias nrt="yarn test"
 alias cl="clear"
 alias c="yarn commit"
 alias gcm="git commit -s -S -m "$1""
+
+alias gall="git add --all"
+alias gp="git push"
 
 gia () {
   git clone git@github.com:"tunnckoCore/$1".git
@@ -63,9 +67,6 @@ alias sk="screenkey"
 math() {
     echo "scale=2 ; $*" | sed -e "s:x:*:g" | sed -e "s:,::g" | bc
 }
-
-alias gall="git add --all"
-alias gp="git push"
 
 # Semantic Releases Setup
 alias sss="semantic-release-cli setup"
