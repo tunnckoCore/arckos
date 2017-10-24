@@ -19,6 +19,7 @@ alias zshc="nano ~/.zsh-charlike"
 alias ali="nano ~/.zsh-aliases"
 
 alias n="yarn"
+alias ns="yarn start"
 alias nad="yarn add --dev"
 alias gad="yarn global add"
 alias nis="yarn add"
