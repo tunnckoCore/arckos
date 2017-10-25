@@ -11,4 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export YARN_GLOBAL_BIN="$HOME/.yarn/bin"
 export YARN_GLOBAL_OFFLINE="$XDG_CONFIG_HOME/yarn/offline"
-export PATH="/usr/local/bin:$YARN_GLOBAL_BIN:$PWD/node_modules/.bin:$PATH"
+export PATH="/usr/local/bin:$YARN_GLOBAL_BIN:./node_modules/.bin:$PATH"
+
+# temporary
+export NODE_TEMPLATE="$HOME/GitHub/template"
