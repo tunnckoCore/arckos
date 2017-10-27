@@ -13,6 +13,23 @@ set $enter    Return
 set $exec exec --no-startup-id
 
 # Theme colors
+# base00 "212121"
+# base01 "303030"
+# base02 "353535"
+# base03 "4A4A4A"
+# base04 "B2CCD6"
+# base05 "EEFFFF"
+# base06 "EEFFFF"
+# base07 "FFFFFF"
+# base08 "F07178"
+# base09 "F78C6C"
+# base10 "FFCB6B"
+# base11 "C3E88D"
+# base12 "89DDFF"
+# base13 "82AAFF"
+# base14 "C792EA"
+# base15 "FF5370"
+
 set $base00 "#101218"
 set $base01 "#1f222d"
 # atom material: set $base01 "#222D32"
@@ -202,3 +219,6 @@ exec_always --no-startup-id nitrogen --restore
 
 # Layouts [us,bg,bg], toggle it with alt+shift
 exec_always --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:alt_shift_toggle"
+
+# Remap Esc to CapsLock (esc key still works)
+exec_alwats --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option caps:escape
