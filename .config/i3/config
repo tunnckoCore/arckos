@@ -221,4 +221,4 @@ exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option "grp:alt_shift_toggle"
 
 # Remap Esc to CapsLock (esc key still works)
-exec_alwats --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option caps:escape
+exec_always --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option caps:escape
